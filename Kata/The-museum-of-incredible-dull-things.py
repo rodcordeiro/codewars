@@ -28,7 +28,8 @@ def remove_smallest2(numbers):
     if a:
         a.remove(min(a))
     return a
-
+def remove_smallest3(n):
+    return n[:n.index(min(n))] + n[n.index(min(n)) + 1:] if n != [] else []
 print(remove_smallest([1, 2, 3, 4, 5]), [2, 3, 4, 5])
 print(remove_smallest([5, 3, 2, 1, 4]), [5, 3, 2, 4])
 print(remove_smallest([1, 2, 3, 1, 1]), [2, 3, 1, 1])
