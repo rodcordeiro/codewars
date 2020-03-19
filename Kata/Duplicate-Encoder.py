@@ -23,4 +23,4 @@ def duplicate_encode2(word):
     return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
 
 
-[print(i,"= ",duplicate_encode(i)) for i in texto]
+print([duplicate_encode(i) for i in texto])
